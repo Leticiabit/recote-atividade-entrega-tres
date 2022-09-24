@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SQvoAB0REe22eNhEvuDsGQ" name="SitedeViagens">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_SZJ9IB0REe22eNhEvuDsGQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8YwyoB0REe22eNhEvuDsGQ" name="Cliente" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Jl56oB0YEe2j95wAMxN5aw" name="clienteId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__7VIMB0WEe2j95wAMxN5aw" name="celularCliente" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MwvUYB0XEe2j95wAMxN5aw" name="emailCliente" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_U1bHEB0YEe2j95wAMxN5aw" name="nomeCliente" visibility="private" aggregation="shared">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eUriECckEe2Cd8HS6U2tjw" name="viagem" type="_TnJiACccEe2yDJn-GHttJg" association="_eUcRgCckEe2Cd8HS6U2tjw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FlBU8CclEe2Cd8HS6U2tjw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eUtXQCckEe2Cd8HS6U2tjw" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Y44K4B0XEe2j95wAMxN5aw" name="clienteLogin"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lTbAAB0XEe2j95wAMxN5aw" name="consultaDestinos"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nM2m0B0XEe2j95wAMxN5aw" name="marcaViagem"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-ON4YB0REe22eNhEvuDsGQ" name="Destino" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vyBpsB0TEe22eNhEvuDsGQ" name="paisDestino" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NzsY0B1cEe2j95wAMxN5aw" name="cidadeDestino" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UoZm0B1cEe2j95wAMxN5aw" name="valorViagem" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yq0RkB1cEe2j95wAMxN5aw" name="destinoId" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5RP2MSckEe2Cd8HS6U2tjw" name="viagem" type="_TnJiACccEe2yDJn-GHttJg" association="_5RNZ8CckEe2Cd8HS6U2tjw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_T1_yIB1fEe2j95wAMxN5aw" name="cadastrarDestino"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XiMXEB1fEe2j95wAMxN5aw" name="excluirDestino"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZJ7J4B1fEe2j95wAMxN5aw" name="alterarValor"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TnJiACccEe2yDJn-GHttJg" name="Viagem" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SKXlgCcdEe2yDJn-GHttJg" name="dataVoo" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M1puICceEe2yDJn-GHttJg" name="dataCompra" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uZsXcCccEe2yDJn-GHttJg" name="Visualizar destinos" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DmyK0CceEe2yDJn-GHttJg" name="mostrarViagens"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eUcRgCckEe2Cd8HS6U2tjw" name="marca_viagem" memberEnd="_eUriECckEe2Cd8HS6U2tjw _eUt-UCckEe2Cd8HS6U2tjw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eUps4CckEe2Cd8HS6U2tjw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eUqT8CckEe2Cd8HS6U2tjw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eUt-UCckEe2Cd8HS6U2tjw" name="cliente" type="_8YwyoB0REe22eNhEvuDsGQ" association="_eUcRgCckEe2Cd8HS6U2tjw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5RNZ8CckEe2Cd8HS6U2tjw" name="contem_destino" memberEnd="_5RP2MSckEe2Cd8HS6U2tjw _5RREUSckEe2Cd8HS6U2tjw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5RPPICckEe2Cd8HS6U2tjw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5RP2MCckEe2Cd8HS6U2tjw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5RREUSckEe2Cd8HS6U2tjw" name="destino" type="_-ON4YB0REe22eNhEvuDsGQ" association="_5RNZ8CckEe2Cd8HS6U2tjw"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Td2pcB0TEe22eNhEvuDsGQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Td6T0B0TEe22eNhEvuDsGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
