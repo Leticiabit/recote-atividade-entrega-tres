@@ -1,3 +1,3 @@
-# recote-atividade-entrega-tres
+# recode-atividade-entrega-tres
 Terceira entrega da atividade da Recode
 testedenovo
