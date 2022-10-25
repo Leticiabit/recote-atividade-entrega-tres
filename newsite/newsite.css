@@ -1,0 +1,78 @@
+body{ background-image: linear-gradient( to right, rgb(18, 223, 195) -20%, rgb(27, 141, 112), rgb(19, 144, 194), #1357d4 ) ; 
+
+}
+
+.container.boxes{
+    color:rgb(156, 11, 137)
+
+}
+
+.card-group{
+    border: 1 black;
+    color: #1357d4 ;
+    border-bottom: 15rem;
+}
+
+.img-home{
+    width: 10%;
+    height: 10%;
+    
+  }
+.carousel-caption{
+
+    margin-bottom: 55rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 0;
+}
+
+.img-fluid {
+    opacity: 0.8;
+    height: 35vh;
+   
+    
+
+}
+.navbarSupportedContent{
+    margin-bottom: 10rem;
+   
+}
+
+.form{
+    margin-top: 5rem;
+    padding: auto;
+}
+
+.contato{
+
+
+color: antiquewhite;
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+.card-body {
+    margin-left: 0rem;
+
+
+}
+
+.text-home {
+
+    text-shadow: #5a86d8;
+    text-align:center;
+    border-top: 0em;
+    border-width: 5rem;
+    border: 0rem;
+    margin: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+footer{
+    opacity: 0.9;
+    color: antiquewhite;
+}
+
+.btn {
+    background: rgb(96, 200, 204);
+    color: #000;
+}
