@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+
+<head>
+	<title>teste viagem</title>
+</head>
+
+<body>
+	<h1>Lista de Viagens</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>id da viagem</th>
+				<th>id do cliente</th>
+				<th>id do destino</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="viagem: ${viagens}">
+				<td th:text="${viagem.id}"></td>
+				<td th:text="${viagem.id_cliente}"></td>
+				<td th:text="${viagem.id_destino}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
